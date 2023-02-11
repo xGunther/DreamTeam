@@ -7,7 +7,16 @@ h1 {
 
 }
 
-h2.music{   
+h1.songs{
+    text-align: center;
+    font-family: Verdana;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2.songs{   
     text-align: center;
     font-family: Verdana;
     font-weight: bolder;
@@ -20,6 +29,13 @@ h3 {
     text-align: center;
     font-weight: bolder;
     color: white;
+}
+h3.songs{   
+    text-align: center;
+    font-family: Verdana;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 0;
 }
 h4.songs {
     font-family: Verdana;
@@ -43,6 +59,8 @@ p.music{
     margin-top: 5px;
     margin-left: 500px;
     margin-right: 500px;
+    margin-bottom: 30px;
+    font-size:medium;
 }
 
 hr {
@@ -52,7 +70,7 @@ hr {
 }
 
 body {
-    background-image: url("mountain.png");
+    background-image: url("/images/mountain.png");
     background-repeat: no-repeat;
     background-size: auto;
     overflow-x: hidden;
@@ -84,7 +102,7 @@ nav{
 
 }
 a:hover{
-    background-color: rgb(218, 97, 16);
+    background-color: rgb(244,128,55);
 }
 a:visited {
     color: darkgray;
@@ -101,8 +119,8 @@ figure{
     width: 185px;
     padding: 7px 3px;
     margin: 2px 0 6px 10px;
-    border: 3px solid gray;
-    background: white;
+    border: 3px solid white;
+    background: rgb(244,128,55);
     box-shadow: 3px 3px 8px rgb(0 0 0 / 50%);
     vertical-align: top;
     
@@ -110,13 +128,13 @@ figure{
 
 figcaption{
     margin-bottom: 0;
-    color: gray;
+    color: black;
     font-size: 15px;
     font-weight: 100;
 }
 
 a.music:link{
-    color: gray;
+    color: lightslategray;
 }
 a.music:hover{
     color: white;
