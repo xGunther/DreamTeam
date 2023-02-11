@@ -7,24 +7,59 @@ h1 {
 
 }
 
+h2.music{   
+    text-align: center;
+    font-family: Verdana;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0;
+}
+
 h3 {
     font-family: Verdana;
     text-align: center;
     font-weight: bolder;
     color: white;
 }
+h4.songs {
+    font-family: Verdana;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Verdana;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+p.music{
+    text-align: center;
+    font-family: Verdana;
+    font-weight: 100;
+    color: white;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
 
 hr {
-    margin-top: 60px;
+    margin-top: 80px;
     border: 3px solid white;
     
 }
 
 body {
-    margin: 50px;
-    background-image: url('https://rare-gallery.com/uploads/posts/964324-The-Lion-King-artwork-digital-art-illustration-Sun.png');
+    background-image: url("mountain.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+p{
+    text-align: center;
 }
 
 nav a {
@@ -39,13 +74,51 @@ nav a {
 }
 
 nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    padding-top: 20px;
+    width: 100%;  
+    height: 50px;
     text-align: center;
-}
 
+}
+a:hover{
+    background-color: rgb(218, 97, 16);
+}
 a:visited {
     color: darkgray;
 }
 
 a:link {
     color: black;
+}
+
+figure{
+    margin: 50px;
+    border-bottom: 75px solid white;
+    display: inline-block;
+    width: 185px;
+    padding: 7px 3px;
+    margin: 2px 0 6px 10px;
+    border: 3px solid gray;
+    background: white;
+    box-shadow: 3px 3px 8px rgb(0 0 0 / 50%);
+    vertical-align: top;
+    
+}
+
+figcaption{
+    margin-bottom: 0;
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+a.music:link{
+    color: gray;
+}
+a.music:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
 }
