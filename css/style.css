@@ -63,8 +63,8 @@ p.music{
     font-weight: 100;
     color: white;
     margin-top: 5px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-bottom: 30px;
     font-size:medium;
 }
@@ -78,16 +78,18 @@ p.storyline {
 
 hr {
     margin-top: 80px;
-    border: 3px solid white;
-    
+    border: 3px solid white;   
 }
 
 body {
     background-image: url("/images/mountain.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     overflow-x: hidden;
     background-attachment: fixed;
+}
+body,html{
+    overflow-x:hidden ;
 }
 p{
     text-align: center;
@@ -136,7 +138,6 @@ figure{
     background: rgb(244,128,55);
     box-shadow: 3px 3px 8px rgb(0 0 0 / 50%);
     vertical-align: top;
-    
 }
 
 figcaption{
