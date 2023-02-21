@@ -4,6 +4,8 @@ h1 {
     font-family: Verdana;
     font-weight: bolder;
     color: white;
+    margin-top: 1em;
+    margin-bottom: .125em;
 }
 
 h2 {
@@ -19,7 +21,7 @@ h1.songs{
     font-weight: bolder;
     color: white;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 1em;
 }
 
 h2.songs{   
@@ -39,7 +41,7 @@ h3 {
 h3.songs{   
     text-align: center;
     font-family: Verdana;
-    font-weight: 100;
+    font-weight: bolder;
     color: white;
     margin-bottom: 0;
 }
@@ -54,7 +56,7 @@ h4.songs {
 p {
     font-family: Verdana;
     text-align: center;
-    font-weight: bolder;
+    font-weight: normal;
     color: white;
 }
 p.music{
@@ -63,11 +65,10 @@ p.music{
     font-weight: 100;
     color: white;
     margin-top: 5px;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 30px;
     font-size:medium;
-
 }
 
 p.storyline {
@@ -77,9 +78,15 @@ p.storyline {
     margin-bottom: 30px;
 }
 
-hr {
-    margin-top: 80px;
-    border: 3px solid white;   
+p.homepage{
+    font-size: x-large;
+    text-align: center;
+    font-family: Verdana;
+    color: white;
+    margin-top: 5px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 30px;
 }
 
 body {
@@ -145,11 +152,27 @@ figure{
     text-align: center;
 }
 
+.resize{
+    border-radius: 20px;
+}
+
+figcaption.homepage{
+    margin-bottom: 1em;
+}
+
 figcaption{
     margin-bottom: 0;
     color: black;
     font-size: 15px;
     font-weight: 100;
+}
+
+a.homepage{
+    color: white;
+    font-weight: bold;
+    font-family: verdana;
+    font-style: italic;
+    text-align: center;
 }
 
 a.music:link{
@@ -203,6 +226,7 @@ a.music:hover{
     .dropdown{
         display: none;
     }
+
 }
 
 @media(max-width: 979px){
@@ -213,10 +237,13 @@ a.music:hover{
         position: absolute;
     }
     h1{
-        font-size: 4em;
+        font-size: 3.5em;
     }
     .blockquote{
         width: 40em;
+    }    
+    .resize{
+        width: 360px;
     }
 }
 
@@ -233,7 +260,7 @@ nav.dropdown{
     text-align: center;
     transform: scale(1,0);
     transform-origin: top;
-    transition: transform 350ms ease-in-out ;
+    transition: transform 350ms ease-in-out;
 }
 nav ul{
     margin: 0;
@@ -298,7 +325,7 @@ a.navbarlinks{
 .navbar li{
     list-style: none;
 }
-nav  img{
+nav img{
     width: 10em;
     margin: 1em;
     top: 1.5em;
