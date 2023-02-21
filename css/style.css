@@ -1,10 +1,16 @@
 h1 {
-    font-size: 100px;
+    font-size: 6em;
     text-align: center;
     font-family: Verdana;
     font-weight: bolder;
     color: white;
+}
 
+h2 {
+    text-align: center;
+    font-family: Verdana;
+    font-weight: bolder;
+    color: white;
 }
 
 h1.songs{
@@ -57,30 +63,42 @@ p.music{
     font-weight: 100;
     color: white;
     margin-top: 5px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-bottom: 30px;
     font-size:medium;
+
+}
+
+p.storyline {
+    margin-top: 5px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 30px;
 }
 
 hr {
     margin-top: 80px;
-    border: 3px solid white;
-    
+    border: 3px solid white;   
 }
 
 body {
     background-image: url("/images/mountain.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     overflow-x: hidden;
     background-attachment: fixed;
+    width: auto;
+    text-align: center;
+}
+body,html{
+    overflow-x: hidden;
 }
 p{
     text-align: center;
 }
 
-nav a {
+/*nav a {
     background-color: white;
     font-family: Verdana;
     font-size: 30px;
@@ -89,20 +107,21 @@ nav a {
     padding: 8px;
     text-decoration: none;
     margin: 10px;
-}
+}*/
 
 nav{
     overflow: hidden;
     position: fixed;
     top: 0;
-    padding-top: 20px;
+    padding-top: 2vw;
     width: 100%;  
-    height: 50px;
+    height: 75px;
     text-align: center;
-
+    background-color: black;
+    margin-left: -8px;
 }
-a:hover{
-    background-color: rgb(244,128,55);
+.navbarlinks:hover{
+    color: rgb(244,128,55);
 }
 a:visited {
     color: darkgray;
@@ -113,7 +132,6 @@ a:link {
 }
 
 figure{
-    margin: 50px;
     border-bottom: 75px solid white;
     display: inline-block;
     width: 185px;
@@ -123,7 +141,8 @@ figure{
     background: rgb(244,128,55);
     box-shadow: 3px 3px 8px rgb(0 0 0 / 50%);
     vertical-align: top;
-    
+    font-family: Verdana;
+    text-align: center;
 }
 
 figcaption{
@@ -140,3 +159,193 @@ a.music:hover{
     color: white;
     background-color: rgba(255, 255, 255, 0);
 }
+
+.musicimage{
+    text-align:center;
+    width: 100%;
+    height: auto;
+}
+
+.menubutton{
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    width: 30px;
+    height: 21px;
+    z-index: 1;
+    width: auto;
+}
+
+
+.menulabel{
+    position: absolute;
+    top: 1.2em;
+    right: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 2em;
+    z-index: 1;   
+}
+.menubar{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 980px){
+    .menulabel{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+    }
+}
+
+@media(max-width: 979px){
+    .navbarlinks{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+    }
+    h1{
+        font-size: 4em;
+    }
+    .blockquote{
+        width: 40em;
+    }
+}
+
+header{
+    width: 30em;
+}
+nav.dropdown{
+    position: absolute;
+    margin-left: -8px;
+    top: 4.5em;
+    background-color: black;
+    height: auto;
+    z-index: 1;
+    text-align: center;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 350ms ease-in-out ;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li{
+    text-align: center;
+    margin: 1em;
+    padding: 0;
+}
+nav.dropdown a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: black;
+    border-radius: 0px;
+    padding: 0;
+    text-decoration: none;
+    margin-left: 0;
+    opacity: 0;
+    transition: opacity 125ms ease-in-out ;
+    font-family: Verdana;
+}
+
+.menubutton:checked ~ nav{
+    transform: scale(1,1);
+}
+.menubutton:checked ~ nav a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.menubutton{
+    display: none;
+}
+
+nav.navbar{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 0;
+    height: 4.5em;
+    border-bottom: 1.5px solid white;
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+a.navbarlinks{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    font-family: Verdana;
+}
+
+.navbar li{
+    list-style: none;
+}
+nav  img{
+    width: 10em;
+    margin: 1em;
+    top: 1.5em;
+    left: 0.75 em;
+}
+
+main{
+    margin-top: 4em;
+}
+
+.blockquote{
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 40em;
+    padding: 1em 3em;
+    background: rgba(244,128,55, 0.5);
+    border: 2px solid white;
+    color: white;
+    font-family: Verdana;
+    box-sizing: border-box;
+    border-left: 15px solid white;
+    max-width: 100%;
+    height: auto;   
+    text-align: left;
+}
+
+.blockquotetext{
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: -2em;
+    text-align: left;
+  
+}
+
+.blockquotecredit{
+    font-weight: bolder;
+    text-align: right;
+}
+
+.blockquotecredit::before{
+    content: "\2014\0020";
+}
+
+.blockquote--quotesign::before{
+    content: "\201c";
+    font-family: "gelasio",serif;
+    font-size: 7em;
+}
+
