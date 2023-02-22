@@ -1,3 +1,25 @@
+:root{
+    --orange:#f48037;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/images/mountain.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
 h1 {
     font-size: 6em;
     text-align: center;
@@ -13,6 +35,7 @@ h2 {
     font-family: Verdana;
     font-weight: bolder;
     color: white;
+    margin-top: 1em;
 }
 
 h3 {
@@ -20,15 +43,10 @@ h3 {
     text-align: center;
     font-weight: bolder;
     color: white;
-}
-h3.songs{   
-    text-align: center;
-    font-family: Verdana;
-    font-weight: bolder;
-    color: white;
     margin-bottom: 0;
 }
-h4.songs {
+
+h4{
     font-family: Verdana;
     text-align: center;
     font-weight: bolder;
@@ -47,12 +65,6 @@ p {
     margin-right: 15vw;
     margin-bottom: 30px;
 }
-p.music{
-    text-align: center;
-    font-family: Verdana;
-    color: white;
-
-}
 
 p.homepage{
     font-size: x-large;
@@ -60,30 +72,6 @@ p.homepage{
     font-family: Verdana;
     color: white;
 }
-
-body {
-    background-image: url("/images/mountain.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    background-attachment: fixed;
-    width: auto;
-    text-align: center;
-}
-body,html{
-    overflow-x: hidden;
-}
-
-/*nav a {
-    background-color: white;
-    font-family: Verdana;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 25px;
-    padding: 8px;
-    text-decoration: none;
-    margin: 10px;
-}*/
 
 nav{
     overflow: hidden;
@@ -94,11 +82,13 @@ nav{
     height: 75px;
     text-align: center;
     background-color: black;
-    margin-left: -8px;
+
 }
+
 .navbarlinks:hover{
-    color: rgb(244,128,55);
+    color: var(--orange);
 }
+
 a:visited {
     color: darkgray;
 }
@@ -114,7 +104,7 @@ figure{
     padding: 7px 3px;
     margin: 2px 0 6px 10px;
     border: 3px solid white;
-    background: rgb(244,128,55);
+    background: var(--orange);
     box-shadow: 3px 3px 8px rgb(0 0 0 / 50%);
     vertical-align: top;
     font-family: Verdana;
@@ -218,13 +208,8 @@ a.music:hover{
     }
 }
 
-
-header{
-    width: 30em;
-}
 nav.dropdown{
     position: absolute;
-    margin-left: -8px;
     top: 4.5em;
     background-color: black;
     height: auto;
@@ -257,6 +242,9 @@ nav.dropdown a{
     opacity: 0;
     transition: opacity 125ms ease-in-out ;
     font-family: Verdana;
+}
+nav.dropdown a:hover{
+    color: var(--orange);
 }
 
 .menubutton:checked ~ nav{
@@ -349,3 +337,17 @@ main{
     font-size: 7em;
 }
 
+footer{
+    overflow: hidden;
+    position: sticky;
+    bottom: 0;
+    padding-top: 2vw;
+    width: 100%;  
+    height: 75px;
+    text-align: center;
+    background-color: black;
+}
+
+article{
+    margin-bottom: 12.5em;
+}
