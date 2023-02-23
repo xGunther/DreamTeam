@@ -356,6 +356,7 @@ th{
     padding: 1em;
     font-family: Verdana;
     background-color: gray;
+    display: none;
 }
 
 @media(max-width: 979px){
@@ -396,5 +397,8 @@ th{
     table{
         margin-right: 15em;
         margin-left: 15em;
+    }
+    .current-page{
+        display: inline;
     }
 }
