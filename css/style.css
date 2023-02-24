@@ -290,11 +290,12 @@ th{
         width: 360px;
     }
     .table{
-        width: 0px;
+        width: 3.125em;
+        text-align: left;
     }
 }
 
-@media (min-width: 980px){
+@media(min-width: 980px){
     .navigation--mobile{
         display: none;
     }
