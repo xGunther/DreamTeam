@@ -12,40 +12,41 @@
     <body>
         <header>
             <h1>Accolades</h1>
-            <p>These are all the prizes and awards that the movie The Lion King has won during its lifetime!</p>
+            <p>
+                These are all the prizes and awards that the movie The Lion King has won during its lifetime!
+            </p>
         </header>         
-        <input type="checkbox" id="menubutton" class="menubutton">            
-        <nav class="dropdown">
-            <ul>
-                <li><a href="/html/index.html">Home</a></li>
-                <li><a href="/html/storyline.html">Storyline</a></li>
-                <li><a href="/html/characters.html">Characters</a></li>
-                <li><a href="/html/reception.html">Reception</a></li>
-                <li><a href="/html/music.html">Music</a></li>
-                <li><a href="/html/accolades.html">Accolades</a></li>
-            </ul>        
+        <input type="checkbox" id="hamburger-menu-button" class="hamburger-menu-button">            
+        <nav class="navigation navigation--mobile">
+            <ul class="navigation__list">
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/index.html">Home</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/storyline.html">Storyline</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/characters.html">Characters</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/reception.html">Reception</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/music.html">Music</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/accolades.html">Accolades</a></li>
+            </ul>
         </nav>
-        <label for="menubutton" class="menulabel">
-            <span class="menubar"></span>
-            <span class="menubar"></span>
-            <span class="menubar"></span>
-        </label> 
-        <nav class="navbar">
-            <img src="/images/lionkinglogo.png" alt="lion king logo">
+        <label for="hamburger-menu-button" class="hamburger-menu-label">
+            <span class="hamburger-menu-label__span"></span>
+            <span class="hamburger-menu-label__span"></span>
+            <span class="hamburger-menu-label__span"></span>
+        </label>
+        <nav class="navigation navigation--desktop">
+            <img class="navigation__logo" src="/images/lionkinglogo.png" alt="Lion King logo">
             <!-- source: https://logodix.com/logo/299194.png -->
-            <ul>
-                <li><a class="navbarlinks" href="/html/index.html">Home</a></li>
-                <li><a class="navbarlinks" href="/html/storyline.html">Storyline</a></li>
-                <li><a class="navbarlinks" href="/html/characters.html">Characters</a></li>
-                <li><a class="navbarlinks" href="/html/reception.html ">Reception</a></li>
-                <li><a class="navbarlinks" href="/html/music.html">Music</a></li>
-                <li><a class="current-page" href="/html/accolades.html">Accolades</a></li> 
+            <ul class="navigation__list">
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/index.html">Home</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/storyline.html">Storyline</a></li>
+                <li class="navigation__list-item" ><a class="navigation__links" href="/html/characters.html">Characters</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/reception.html ">Reception</a></li>
+                <li class="navigation__list-item"><a class="navigation__links" href="/html/music.html">Music</a></li>
+                <li class="navigation__list-item"><a class="navigation__current-page" href="/html/accolades.html">Accolades</a></li> 
             </ul>
         </nav>
         <main>
-
-            <table>
-                <tr class="tablerow__header">
+            <table class="table">
+                <tr class="table__first-row">
                     <th>Award</th> 
                     <th>Category</th>
                     <th>Nominee(s)</th>
@@ -233,16 +234,16 @@
             </table>
             <a href="https://en.wikipedia.org/wiki/The_Lion_King#Accolades">Table source: Accolades of The Lion King on Wikipedia</a>
         </main>
-        <footer>
-            <h4 class="footer-header">Useful links</h4>
+        <footer class="footer">
+            <h4 class="footer__header">Useful links</h4>
             <ul>
-                <li><a class="footer-links" href="https://www.youtube.com/watch?v=lFzVJEksoDY">Trailer</a></li>
-                <li><a class="footer-links" href="https://lionking.fandom.com/wiki/The_Lion_King_Wiki">Lion King Fandom Wiki</a></li>
-                <li><a class="footer-links" href="https://lionking.com/">Lion King Official Website</a></li>
-                <li><a class="footer-links" href="https://www.disneyplus.com/nl-nl/movies/the-lion-king/1HqwiEcje6Nj">Disney+</a></li>
-                <li><a class="footer-links" href="https://www.youtube.com/watch?v=uGCBi_9oRLI">Youtube</a></li>
+                <li><a class="footer__links" href="https://www.youtube.com/watch?v=lFzVJEksoDY">Trailer</a></li>
+                <li><a class="footer__links" href="https://lionking.fandom.com/wiki/The_Lion_King_Wiki">Lion King Fandom Wiki</a></li>
+                <li><a class="footer__links" href="https://lionking.com/">Lion King Official Website</a></li>
+                <li><a class="footer__links" href="https://www.disneyplus.com/nl-nl/movies/the-lion-king/1HqwiEcje6Nj">Disney+</a></li>
+                <li><a class="footer__links" href="https://www.youtube.com/watch?v=uGCBi_9oRLI">Youtube</a></li>
             </ul>
-            <h4 class="footer-header">Contact</h4>
+            <h4 class="footer__header">Contact</h4>
             <ul>
                 <li>Universiteit Utrecht</li>
                 <li>Gun Chen, Ingmar Janson & Luuk van Dalsen</li>
