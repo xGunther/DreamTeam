@@ -261,7 +261,7 @@ nav img{
     width: 10em;
     margin: 1em;
     top: 1.5em;
-    left: 0.75 em;
+    left: 0.75em;
 }
 
 main{
@@ -304,10 +304,16 @@ table{
     margin-right: auto;
 }
 
+.tablerow__header{
+    font-size: large;
+    font-style:italic;
+}
+
 th{
     border: 1.5px solid white;
     font-weight: 100;
 }
+
 
 .current-page{
     color: white;
@@ -336,7 +342,6 @@ th{
     }
     table{
         width: 0px;
-        align-items: left;
     }
     h1{
         margin-top: 1.5em;
