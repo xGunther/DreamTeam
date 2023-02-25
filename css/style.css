@@ -31,6 +31,9 @@ h1 {
 h2 {
     margin-top: 1em;
 }
+h3{
+    margin-top: .5em;
+}
 
 p {
     font-weight: 100;
@@ -78,16 +81,11 @@ figcaption{
     font-weight: 100;
 }
 
-.home-page-caption{
-    margin-bottom: 1em;
-}
-
 .home-page-caption__link{
     color: white;
     font-weight: bold;
     font-style: italic;    
     font-size: medium;
-    margin-bottom: 1em;
 }
 
 .hamburger-menu-button{
@@ -227,16 +225,10 @@ main{
 
 .table{
     border-collapse: collapse;
-    align-items: center;
     border: 1px solid white;
     background-color: rgba(244,128,55, 0.75);
     margin-left: auto;
     margin-right: auto;
-}
-
-.tablerow__first-row{
-    font-size: large;
-    font-style:italic;
 }
 
 th{
@@ -244,6 +236,10 @@ th{
     font-weight: 100;
 }
 
+.table__first-header{
+    font-size: large;
+    font-style: italic;
+}
 
 .navigation__current-page{
     color: white;
