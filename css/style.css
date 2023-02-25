@@ -29,6 +29,7 @@ h1 {
 h2 {
     margin-top: 1em;
 }
+
 h3{
     margin-top: .5em;
 }
@@ -143,8 +144,6 @@ figcaption{
     opacity: 0;
     transition: opacity 125ms ease-in-out ;
 }
-
-
 
 .hamburger-menu-button:checked ~ nav{
     transform: scale(1,1);
