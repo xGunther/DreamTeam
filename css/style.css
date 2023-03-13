@@ -113,7 +113,7 @@ figcaption{
 
 
 .navigation--mobile{
-    position: absolute;
+    position: fixed;
     top: 4.5em;
     background-color: black;
     height: auto;
@@ -264,6 +264,12 @@ th{
     }
     .navigation--desktop{
         position: absolute;
+    }
+    .navigation{
+        position: fixed;
+    }
+    .hamburger-menu-label{
+        position: fixed;
     }
     h1{
         font-size: 3.5em;
